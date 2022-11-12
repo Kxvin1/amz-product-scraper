@@ -20,8 +20,6 @@ user_search_term = "nvme 1tb"  # change the string here to what you want
 amz_search_term = user_search_term.replace(" ", "+")
 # target url (search results page)
 url = f"https://www.amazon.com/s?k={amz_search_term}"
-# Define the url to scrape
-url = "https://www.amazon.com/s?k=ssd&i=computers&rh=n%3A541966&dc&qid=1580774382&rnid=2941120011&ref=sr_nr_n_1"
 
 # Create an HTML Session object
 s = HTMLSession()
