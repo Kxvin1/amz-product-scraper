@@ -74,12 +74,12 @@ def complete_scraper(search_term, filename):
             sp.write("-------------------------")
 
             # for testing purposes so products isn't scraping a bunch of data if only testing
-            if len(products) == 2:
-                sp.ok("✔")
-                break
+            # if len(products) == 2:
+            #     sp.ok("✔")
+            #     break
 
         # once loop is finished, change loading icon to a green check mark
-        # sp.ok("✔")
+        sp.ok("✔")
 
     print(
         f"Finished writing data for search query: '{user_search_term}'\nExported to {filename}.csv"
