@@ -43,3 +43,12 @@ def asin_only(search_term, filename):
     df = pd.DataFrame(asins)
     # # Export DataFrame into a CSV file
     df.to_csv(f"{filename}.csv", index=False)
+
+
+# Example (no params): asin_only(your_search_term, your_desired_file_name)
+# Example (with params): asin_only("nvme 1tb", "test")
+#############################################
+########## EDIT FUNCTION ARGS HERE ##########
+asin_only("nvme 1tb", "test")
+########## EDIT FUNCTION ARGS HERE ##########
+#############################################

@@ -91,5 +91,10 @@ def complete_scraper(search_term, filename):
     df.to_csv(f"{filename}.csv", index=False)
 
 
-# CHANGE ARGS HERE: complete_scraper(your_search_term, your_desired_file_name)
+# Example (no params): complete_scraper(your_search_term, your_desired_file_name)
+# Example (with params): complete_scraper("nvme 1tb", "test")
+#############################################
+########## EDIT FUNCTION ARGS HERE ##########
 complete_scraper("nvme 1tb", "test")
+########## EDIT FUNCTION ARGS HERE ##########
+#############################################
