@@ -11,7 +11,7 @@ from requests_html import HTMLSession
 
 def asin_only(search_term, filename):
     # user searches are typically separated by spaces, not +
-    user_search_term = search_term  # change the string here to what you want
+    user_search_term = search_term
     # in amazon query, spaces are replaced with a +
     amz_search_term = user_search_term.replace(" ", "+")
     # target url (search results page)
