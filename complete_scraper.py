@@ -38,7 +38,7 @@ products = []
 
 # Loop through each ASIN and grab the title, price, rating, and number of reviews
 for asin in asins:
-    print("in asins loop")
+    print("Gathering data for", asin)
     url = f"https://www.amazon.com/dp/{asin}"
     s = HTMLSession()
     r = s.get(url)
@@ -49,14 +49,20 @@ for asin in asins:
     rating = r.html.find("span.a-icon-alt", first=True).full_text
     reviews = r.html.find("#acrCustomerReviewText", first=True).full_text
 
-    product = {"title": title, "price": price, "rating": rating, "reviews": reviews}
+    product = {
+        "asin": asin,
+        "title": title,
+        "price": price,
+        "rating": rating,
+        "reviews": reviews,
+    }
 
     products.append(product)
-    print("Grabbed ASIN", asin)
+    print(f"Finished Grabbing Data For ASIN {asin}\nProduct Object: {product}")
 
     # for testing purposes so products isn't scraping a bunch of data if only testing
-    # if len(products) == 1:
-    #     break
+    if len(products) == 1:
+        break
 
 # Convert list of dictionaries into pandas DataFrame
 df = pd.DataFrame(products)
