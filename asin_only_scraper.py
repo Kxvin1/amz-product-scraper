@@ -20,7 +20,7 @@ s = HTMLSession()
 # get the request url
 r = s.get(url)
 # required so amazon doesn't block you (it won't think you're a bot)
-r.html.render(sleep=1)
+r.html.render(sleep=1, timeout=20)
 
 # 'products' is an array of objects, we look in the html and find the data-asin key and extract the value (the asin)
 products = r.html.find("div[data-asin]")
@@ -31,6 +31,10 @@ for product in products:
     if product.attrs["data-asin"] != "":
         # append it to our output list
         asins.append(product.attrs["data-asin"])
+
+print(
+    f"Finished writing data for search query: '{user_search_term}'\nExported to asins_only.csv"
+)
 
 # example of exporting to csv using pandas
 # # Convert list of dictionaries into pandas DataFrame
