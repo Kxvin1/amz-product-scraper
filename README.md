@@ -1,5 +1,9 @@
 ###### _Working as of 11/12/2022_
 
+### See it in action with an example:
+https://user-images.githubusercontent.com/91479661/201498309-da533957-c8ae-4737-8ddd-ec39c49049ca.mp4
+
+
 ---
 
 ### How to use:
