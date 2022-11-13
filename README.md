@@ -23,3 +23,4 @@ run the 'complete_scraper.py' script
 ### Todo:
 
 ###### 1. Add both functionalities to JARVIS (my discord bot)
+###### 2. Speed up scraping (one of these?: multithreading, multiprocessing, asyncio)
