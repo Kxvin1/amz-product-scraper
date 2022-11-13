@@ -10,16 +10,16 @@ https://user-images.githubusercontent.com/91479661/201498309-da533957-c8ae-4737-
 
 ###### [FAST] Option 1: Grabs asins only and exports to csv under 1 column
 ```bash
-run the 'asin_only_scraper.py' file
+run the 'asin_only_scraper.py' script
 ```
 
-###### [SLOW] Option 2: Grabs asin, price, total review rating, number of reviews and then export to csv under 4 columns
+###### [SLOW] Option 2: Grabs asin, price, total review rating, number of reviews and then export to csv under 5 columns (ASIN, Title, Price, Rating, Reviews)
 ```bash
-run the 'complete_scraper.py' file
+run the 'complete_scraper.py' script
 ```
 
 ---
 
 ### Todo:
 
-###### 1. Convert scrapers to functions and call from main.py via terminal command line arguments
+###### 1. Add both functionalities to JARVIS (my discord bot)
