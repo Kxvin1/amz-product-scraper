@@ -1,3 +1,15 @@
+### Web Scraper for Amazon.com products
+
+---
+
+### Technology Used
+
+![python](https://img.shields.io/badge/Python-3776AB.svg?style=for-the-badge&logo=Python&logoColor=white)
+![pandas](https://img.shields.io/badge/pandas-150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
+![amazon](https://img.shields.io/badge/Amazon-FF9900.svg?style=for-the-badge&logo=Amazon&logoColor=white)
+
+---
+
 ### See it in action with an example:
 https://user-images.githubusercontent.com/91479661/201498309-da533957-c8ae-4737-8ddd-ec39c49049ca.mp4
 
