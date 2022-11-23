@@ -10,7 +10,7 @@
 
 ---
 
-### See it in action with an example:
+### See it in action with a video example:
 https://user-images.githubusercontent.com/91479661/201498309-da533957-c8ae-4737-8ddd-ec39c49049ca.mp4
 
 
